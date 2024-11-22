@@ -4,9 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #3498db); /* Fondo oscuro y moderno */
+            color: #fff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido para dar contraste */
+            border-radius: 15px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #e74c3c, #f39c12); /* Gradiente en el botón */
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(171, 205, 239, 0.3);
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #f39c12, #e74c3c); /* Cambio de gradiente en hover */
+            transform: translateY(-10px); /* Efecto de elevación */
+            box-shadow: 0 12px 35px rgba(255, 165, 0, 0.5); /* Brillo futurista */
+        }
+
+        .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 8px 25px rgba(255, 165, 0, 0.3); /* Efecto de sombra en "click" */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Diseño responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola esta es mi primera página en Django</h1>
-    <p>Mola esto de programar en Django</p>
+    <div class="container">
+        <h1>Hola desde mi primera página en Django</h1>
+        <p>Mola esto de programar en Django</p>
+        <div class="content">
+            <a href="http://127.0.0.1:8000/blog/segunda" class="btn">Ir a la segunda página</a>
+        </div>
+    </div>
 </body>
 </html>

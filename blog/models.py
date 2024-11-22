@@ -4,8 +4,8 @@ from django.db import models
 class Post(models.Model):
     titulo = models.CharField(max_length=200)
     autor = models.CharField(max_length=60)
-    cuerpo = models.CharField(max_length=5000)
+    cuerpo = models.TextField()
 
     def __str__(self):
-        return self.titulo
+        return f"ID: {self.id} TITULO: {self.titulo}"
     

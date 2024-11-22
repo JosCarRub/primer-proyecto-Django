@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Página</title>
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #3498db); /* Fondo oscuro y moderno */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: #3498db;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(52, 152, 219, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        /* Diseño responsivo */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                padding: 12px 28px;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .btn {
+                padding: 10px 24px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Bienvenido a la segunda página</h1>
+            <p>Programando en Django desde mi casa</p>
+        </header>
+
+        <div class="content">
+            <p>José Carlos Cataluña Rubio</p>
+            <a href="http://127.0.0.1:8000/blog/" class="btn">Volver a la página principal</a>
+        </div>
+    </div>
+
+</body>
+</html>
